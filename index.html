@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p>Hello AE</p>
+</body>
+</html>
+
+<script>
+    let passWord;
+    let userName = prompt("Nhập user name");
+    if (userName === "Admin") {
+        passWord = prompt("Nhập mật khẩu");
+        if (passWord === "TheMaster") {
+            alert("Welcome!");
+        } else if (passWord === null) {
+            alert("Canceled!");
+        } else if (passWord !== "TheMaster") {
+            alert("Wrong password!")
+        }
+    } else if (userName === null) {
+        alert("Canceled!");
+    } else {
+        alert("I Don't Know You");
+    }
+</script>
+
+<!--Nếu tên nhập vào là Admin thì yêu cầu nhập mật khẩu.-->
+<!--Nếu mật khẩu là TheMaster thì in ra chuỗi Welcome.-->
+<!--Nếu mật khẩu nhập vào là null in ra chuỗi Canceled.-->
+<!--Còn lại in ra chuỗi Wrong password.-->
+<!--Nếu tên nhập vào là null in ra chuỗi canceld.-->
+<!--Còn lại in ra chuỗi “I don’t know you"-->
